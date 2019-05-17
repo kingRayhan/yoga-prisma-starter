@@ -1,0 +1,16 @@
+{
+    "name": "prisma-blog",
+    "description": "prisma testing blog",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "graphql-cli": "^3.0.11",
+        "graphql-yoga": "^1.17.4",
+        "prisma": "^1.33.0",
+        "prisma-binding": "^2.3.10"
+    },
+    "scripts": {
+        "generate-schema": "graphql get-schema -p prisma",
+        "deploy": "prisma deploy && npm run generate-schema",
+        "dev": "nodemon index"
+    }
+}
