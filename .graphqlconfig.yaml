@@ -1,4 +1,4 @@
-schemaPath: prisma/generated.graphql
+schemaPath: prisma/prisma.graphql
 extensions:
     endpoints:
         default: ${env:PRISMA_ENDPOINT}

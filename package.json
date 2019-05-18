@@ -2,11 +2,12 @@
     "name": "prisma-blog",
     "description": "prisma testing blog",
     "dependencies": {
+        "bcryptjs": "^2.4.3",
         "dotenv": "^8.0.0",
         "graphql-cli": "^3.0.11",
         "graphql-yoga": "^1.17.4",
-        "prisma": "^1.33.0",
-        "prisma-binding": "^2.3.10"
+        "prisma-binding": "^2.3.10",
+        "validator": "^10.11.0"
     },
     "scripts": {
         "generate-schema": "graphql get-schema -p prisma",

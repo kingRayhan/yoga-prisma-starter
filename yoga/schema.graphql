@@ -1,0 +1,25 @@
+# import * from '../prisma/prisma.graphql'
+
+type Query {
+    users(
+        where: UserWhereInput
+        orderBy: UserOrderByInput
+        skip: Int
+        after: String
+        before: String
+        first: Int
+        last: Int
+    ): [User]!
+    user(where: UserWhereUniqueInput!): User
+}
+
+type Mutation {
+    createUser(data: CreateUserInput): User!
+    updateUser(data: UserUpdateInput!, userId: ID!): User!
+}
+
+input CreateUserInput {
+    name: String!
+    email: String!
+    password: String!
+}
